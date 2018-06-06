@@ -1,0 +1,41 @@
+body {
+  font-family: verdana;
+}
+a {
+  text-decoration: none;
+}
+header,
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+header .container {
+  flex-direction: column;
+}
+
+header {
+  background-color: blue;
+  color: white;
+}
+
+.container {
+  width: 1024px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container p {
+    text-align: center;
+    background-color: darkgrey;
+    color: white;
+    font-weight: bold;
+    padding: 15px 0;
+}
+.thumbnail {
+  display: inline-block;
+  width: 400px;
+}
+.thumbnail:hover {
+  opacity: 0.5;
+}
