@@ -1,41 +1,74 @@
 body {
-  font-family: verdana;
+  font-family: georgia;
+  background-image: url("../resources/images/background-texture.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1, h2, h3 {
+  margin-bottom: 5px;
+}
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 24px;
 }
 a {
   text-decoration: none;
 }
+
 header,
 .main-content {
   display: flex;
   justify-content: center;
 }
-header .container {
-  flex-direction: column;
-}
 
-header {
-  background-color: blue;
+header .container {
+  display: block;
   color: white;
 }
 
+.main-content {
+  height: auto;
+  align-items: center;
+  padding-top: 20px;
+  min-height: 800px;
+}
+
 .container {
-  width: 1024px;
+  width: 80%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.container p {
+
+.thumbnail h5 {
     text-align: center;
-    background-color: darkgrey;
+    background-color: saddlebrown;
+    opacity: 0.75;
     color: white;
     font-weight: bold;
     padding: 15px 0;
+
 }
+
 .thumbnail {
-  display: inline-block;
-  width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin: 2% 2%;
 }
-.thumbnail:hover {
-  opacity: 0.5;
+
+footer {
+  padding: 20px 0;
+  text-align: left;
+  color: white;
 }
